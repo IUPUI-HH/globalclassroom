@@ -1,0 +1,128 @@
+html,
+body,
+.grid-container {
+  height: 100%;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.3fr 1.2fr 1.2fr 0.8fr;
+  grid-template-rows: 0.2fr 1fr 0.7fr 0.3fr;
+  gap: 20px 20px;
+  grid-template-areas:
+    ". title title ."
+    "navigationBar topFive demographicGraph demographicGraph"
+    ". memeCarousel memeCarousel ."
+    "info info info info"
+    "footer footer footer footer";
+  
+}
+
+h1 {
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 50px;
+  letter-spacing: 1.4px;
+  word-spacing: 1.2px;
+  color: #174B58;
+  font-weight: 700;
+  text-decoration: underline solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: none;
+  text-align: center;
+  
+}
+
+
+
+body {
+  
+}
+
+.title {
+  grid-area: title;
+  grid-area: display none ;
+  background-color: #B1E1EA;
+  border-radius: 40px;
+  border: 1px solid rgb(153, 153, 153);
+  
+}
+
+.topFive {
+  grid-area: topFive;
+  background-color: #CDF3E8;
+  border-radius: 40px;
+  border: 1px solid rgb(153, 153, 153);
+  
+}
+
+.demographicGraph {
+  grid-area: demographicGraph;
+  background-color: #DEF7E6;
+  border-radius: 40px;
+  border: 1px solid rgb(153, 153, 153);
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+.navigationBar {
+  grid-area: navigationBar;
+  background-color: #CAF2E7;
+  border-radius: 40px;
+  border: 1px solid rgb(153, 153, 153);
+  
+font-family: 'Poppins', cursive, sans-serif;
+  font-size:1em;
+  color: #2D3142;
+}
+
+.memeCarousel {
+  grid-area: memeCarousel;
+  background-color: #C7F2D5;
+  border-radius: 40px;
+  border: 1px solid rgb(153, 153, 153);
+
+}
+.info {
+  grid-area: info;
+  background-color: #E1EDDF;
+  border-radius: 40px;
+  border: 1px solid rgb(153, 153, 153);
+
+}
+
+.footer {
+  grid-area: footer;
+}
+
+
+
+.grid-container * {
+  
+  position: relative;
+}
+
+.grid-container *:after {
+  /*content: attr(class);*/
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+ol {
+  list-style-type: decimal;
+}
+ol {
+  padding: 5px;
+  margin: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  text-align: center;
+  list-style: inside;
+
+}
+
+
+

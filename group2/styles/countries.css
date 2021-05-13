@@ -1,0 +1,294 @@
+/* CSS Document */
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins&display=swap");
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "homeTitle homeTitle homeTitle homeTitle homeTitle homeTitle"
+    "homeButton brazilButton englandButton russiaButton usaButton conclusionButton"
+    "countryTitle countryTitle countryTitle countryTitle countryTitle countryTitle"
+    "topFive topFive topFive demographicGraph demographicGraph demographicGraph"
+    ". memeCarousel memeCarousel memeCarousel memeCarousel ."
+    "infoHome infoHome infoHome infoHome infoHome infoHome";
+}
+
+body {
+	width: 92%;
+	margin: 0 auto;
+	background-color: rgb (255,255,255);
+}
+
+h1 {
+	color: white;
+	font-family: "PT Serif", serif;
+	font-family: "Poppins", cursive;
+}
+h2 {
+	font-family: "Poppins", cursive;
+}
+h3 {
+	font-family: "Poppins", cursive;
+}
+.graph{
+	width:75%
+}
+.nav {
+	color: white;
+	font-family: "PT Serif", serif;
+	text-align: center;
+}
+.phoneNav a {
+	color: white;
+	font-family: "PT Serif", serif;
+	text-align: center;
+}
+.footer {
+	text-align: center; 
+	color: white;
+	font-family: "Poppins", cursive;
+    font-size: smaller;
+}
+
+.footer a {
+	color: white;
+}
+
+.homeTitle {
+    grid-area: homeTitle;
+    background-color: rgb(45, 49, 66);
+	text-align: center;
+}
+
+.home {
+	grid-area: homeButton;
+}
+.brazil {
+	grid-area: brazilButton;
+}
+.england {
+	grid-area: englandButton;
+}
+.russia {
+	grid-area: russiaButton;
+}
+.usa {
+	grid-area: usaButton;
+}
+.conclusion {
+	grid-area: conclusionButton;
+}
+  
+.button, .phonebutton, .phoneNav {
+	background-color: #4f5d75;
+	text-align: center; 
+}
+
+.button, .phoneButton, .phoneNav {
+	background-color: #4f5d75;
+	text-align: center;
+}
+.phoneButton {
+	padding: 1px;
+}
+.button:hover { 
+	background-color: #EF8354;
+}
+.button a, .phoneButton a {
+	text-decoration: none;
+}
+.current {
+	background-color: #EF8354;
+}
+
+.countryTitle { 
+	grid-area: countryTitle; 
+	font-size: x-large;
+}
+
+.topFive { 
+	grid-area: topFive;
+	padding: 20px;
+}
+
+.demographicGraph { 
+	grid-area: demographicGraph;
+	padding: 20px;
+}
+
+.memeCarousel { 
+	grid-area: memeCarousel; 
+}
+
+.memeCarousel h3 {
+    text-align: center;
+}
+
+.infoHome { 
+	grid-area: infoHome;
+	background-color: rgb(79,93,117)
+}
+
+@media screen and (max-width: 800px){
+	.grid-container {
+		grid-template-columns: auto;
+		grid-template-areas: "homeTitle" "phoneNav" "homeButton" "brazilButton" "englandButton" "russiaButton" "usaButton" "conclusionButton" "countryTitle" "topFive" "demographicGraph" "memeCarousel" "infoHome";
+	}
+
+	.phoneNav {
+		grid-area: phoneNav;
+		padding: 15px;
+	  }
+	
+	.button {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 801px) {
+	.phoneNav {
+		display: none;
+	}
+}
+
+#expander {
+	display: none;
+}
+
+a {
+	color: #2d3142
+}
+
+/*carousel css*/
+.items {
+	position: relative;
+    min-height: 28vw;
+	top: 50%;
+    transform: translate(0, -50%);
+}
+  
+.item {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 20vw;
+    height: 100%;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+}
+  
+.item img {
+    width: 100%;
+    height: 75%;
+    object-fit: scale-down;  
+}
+  
+.item p {
+    opacity: 0;
+}
+  
+.item.active {
+    opacity: 1;
+    z-index: 1;
+}
+  
+.item.active img {
+    background-color: black;
+}
+  
+.item.active p {
+    opacity: 1;
+    text-align: center;
+    vertical-align: center;
+    border: 3px solid black;
+    padding: 5px;
+    width: 50vw;
+    transform: translate(-30%, 0);
+}
+  
+.item.prev {
+    opacity: 25%;
+    transform: translate(-100%, 0);
+}
+  
+.item.next {
+    opacity: 25%;
+    transform: translate(0, 0);
+}
+  
+.button-container {
+    position: relative;
+    width: 100%;
+    height: 9vh;
+	bottom: 50%;
+	transform: translate(0, 50%);
+}
+  
+.carouselButton {
+    height: 100%;
+}
+  
+#left {
+    transform: scale(-1, 1);
+}
+  
+#right {
+	position: absolute;
+	left: 100%;
+	transform: translate(-50%, 0);
+}
+
+@media screen and (max-width: 800px) {
+    .items {
+        top: 15vh;
+    }
+
+    .item {
+        width: 25vh;
+    }
+
+    .button-container {
+       width: 70vw;
+       transform: translate(10%, 50%);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .memeCarousel {
+        height: 45vh;
+    }
+
+    .item {
+        width: 18vh;
+    }
+
+    .item.active p {
+        width: 80vw;     
+        transform: translate(-35%, 0);
+    }
+
+    .button-container {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .memeCarousel {
+        height: 50vh;
+    }
+
+    .item.active p {
+        transform: translate(-30%, 0);
+    }
+
+    .button-container {
+        height: 7vh;
+        bottom: 20%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .memeCarousel {
+        height: 60vh;
+    }
+}

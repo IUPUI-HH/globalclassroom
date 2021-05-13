@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+    
+    <meta name="author" content="Gabriela Ticu">
+    <meta name="description" content="Social Media Usage in Russia">
+    <meta name="keywords" content="social media, russia, ru">
+        
+    <title>Cross-cultural Ties Through Social Media - Russia</title>
+    <link rel="stylesheet" type="text/css" href="styles/countries.css">
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <div class="homeTitle">
+        <h1>Cross-cultural Ties Through Social Media Platforms</h1>
+      </div>
+        
+      <div class="home button"><a href="index.html"><p class="nav">Home</p></a></div>
+      <div class="brazil button"><a href="brazil.html"><p class="nav">Brazil</p></a></div>
+      <div class="england button"><a href="uk.html"><p class="nav">UK</p></a></div>
+      <div class="russia button current"><p class="nav">Russia</p></div>
+      <div class="usa button"><a href="us.html"><p class="nav">USA</p></a></div>
+      <div class="conclusion button"><a href="conclusion.html"><p class="nav">Conclusion</p></a></div>
+      
+      <div class="phoneNav">
+        <span id="show">
+          <a href="#" onClick="show();" style="text-decoration: none;">&#9776; Menu</a> 
+        </span>
+        <span id="hide" style="display: none;">
+          <a href="#" onClick="hide();" style="text-decoration: none;">&#9776; Menu</a>
+        </span>
+      </div>
+      <div id="expander">
+        <div class="phoneButton home"><a href="index.html"><p class="nav">Home</p></a></div>
+        <div class="phoneButton brazil"><a href="brazil.html"><p class="nav">Brazil</p></a></div>
+        <div class="phoneButton england"><a href="uk.html"><p class="nav">UK</p></a></div>
+        <div class="phoneButton russia current"><p class="nav">Russia</p></div>
+        <div class="phoneButton usa"><a href="us.html"><p class="nav">USA</p></a></div>
+        <div class="phoneButton conclusion"><a href="conclusion.html"><p class="nav">Conclusion</p></a></div>
+      </div>
+      
+      <div class="countryTitle">
+        <h2>Russia</h2>
+      </div>
+
+      <div class="topFive">
+        <h3>Top 5 Social Media bases on usuage (2020)</h3>
+        <ol>
+            <li>VKontakte - 78%</li>
+            <li>Telegram - 72.60%</li>
+            <li>YouTube - 64.8%</li>
+            <li>WhatsApp - 61.2%</li>
+            <li>Instagram - 49.2%</li>
+        </ol>
+        <p>VK (short for VKontakte) - a Russian online social media based in Saint Petersburg.</p>
+        <p>'VKontakte' vaguely translates into ‘being in touch’.</p>    
+        <p>
+            VK is available in multiple languages but it is predominantly used by Russian-speakers.
+            It is most popular in Russia, Ukraine, Kazakhstan, Moldova and Belarus. 
+            It is similar to Facebook, as VKontakte allows users to message their friends privately or publicly, 
+            create groups and public pages, share and tag images and videos, and play games. 
+            VKontakte is the fourth-most visited site in Russia.
+        </p>
+        <p>
+            VKontakte launched in October 2006. At the time, users were limited to university students who had received 
+            invites to join, similar to the beginnings of Facebook. By February 2007, the site reached 100,000 members 
+            and became the second largest social networking site in Russia.  In 2011, invitations were no longer required 
+            in order to join, and the website was opened to the public . The majority of VKontakte users are young men 
+            and women between the ages of 18 and 24.
+        </p>
+      </div>
+
+      <div class="demographicGraph">
+        <h3>Demographic Graph</h3>
+        <img class="graph" src="images/russia/demographicsRussia.png" alt="demographic of Russia">
+        <p>
+            The primary age group that uses social media in Russia is 16 - 24 years old. 
+            People aged 55-64 use social networks the least; only 20% of them are registered in Social Media.
+        </p>
+      </div>
+
+      <div class="memeCarousel">
+        <h3>Popular Memes in Russia</h3>
+        <input id="memeNumber" type="hidden" value="5">
+        <div class="items">
+            <div class="item active">
+                <img src="images/russia/memeLucky.jpg" alt="meme">
+                <p>Translation: “lucky lucky”</p>
+            </div>
+            <div class="item next">
+                <img src="images/russia/memeMoron.jpg" alt="meme">
+                <p>Translation: “smarter like a moron”</p>
+            </div>
+            <div class="item">
+                <img src="images/russia/memeNerv.jpg" alt="meme">
+                <p>Translation: "bervous nreakdown"; first letters of the words are swapped</p>
+            </div>
+            <div class="item">
+                <img src="images/russia/memePutin.jpg" alt="meme">
+                <p>Translation: “Palace for Putin”. It is a video cover of the main oppositionist of Russia, Navalny, about Putin's palace</p>
+            </div>
+            <div class="item prev">
+                <img src="images/russia/memeNavalny.jpg" alt="meme">
+                <p>This is Navalny during the trial showing heart to his wife. This picture is often used in different memes about love and relationships</p>
+            </div>
+        </div>
+
+        <div class="button-container" id="buttons">
+          <img class="carouselButton" id="left" src="images/play-button.png" alt="carousel button">
+          <img class="carouselButton" id="right" src="images/play-button.png" alt="carousel button">
+        </div>
+      </div>
+
+      <div class="infoHome">
+        <p class="footer">
+          THIS WEBSITE IS PART OF A GLOBAL CLASSROOM COLLABORATION BETWEEN
+          <a href="https://www.haaga-helia.fi/en">HAAGA-HELIA UNIVERSITY OF APPLIED SCIENCE</a> [DIG1TF001] <br>
+          AND <a href="https://www.iupui.edu/"> INDIANA
+          UNIVERSITY-PURDUE UNIVERSITY INDIANAPOLIS</a> (IUPUI) [LIS-S604 36571]
+        </p>
+      </div>
+    </div>
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/menu.js"></script>
+  </body>
+</html>

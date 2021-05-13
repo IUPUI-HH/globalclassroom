@@ -1,0 +1,143 @@
+/* CSS Document */
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins&display=swap");
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  grid-template-areas:
+    "homeTitle homeTitle homeTitle homeTitle homeTitle homeTitle"
+    "homeButton brazilButton englandButton russiaButton usaButton conclusionButton"
+    "aboutHome aboutHome mapHome mapHome mapHome mapHome "
+    "infoHome infoHome infoHome infoHome infoHome infoHome";
+}
+
+body {
+  width: 92%;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+}
+
+h1 {
+  color: white;
+  font-family: "PT Serif", serif;
+  font-family: "Poppins", cursive;
+}
+h2 {
+  font-family: "Poppins", cursive;
+}
+.nav {
+  color: white;
+  font-family: "PT Serif", serif;
+  text-align: center;
+}
+.phoneNav a {
+  color: white;
+  font-family: "PT Serif", serif;
+  text-align: center;
+}
+.footer {
+  text-align: center;
+  color: white;
+  font-family: "Poppins", cursive;
+}
+.footer a {
+  color: white;
+}
+
+.homeTitle {
+  grid-area: homeTitle;
+  background-color: rgb(45, 49, 66);
+  text-align: center;
+}
+
+.home {
+  grid-area: homeButton;
+}
+.brazil {
+  grid-area: brazilButton;
+}
+.england {
+  grid-area: englandButton;
+}
+.russia {
+  grid-area: russiaButton;
+}
+.usa {
+  grid-area: usaButton;
+}
+.conclusion {
+  grid-area: conclusionButton;
+}
+
+.button, .phoneButton, .phoneNav {
+  background-color: #4f5d75;
+  text-align: center;
+}
+.phoneButton {
+  padding: 1px;
+}
+.button:hover { 
+  background-color: #EF8354;
+}
+.button a, .phoneButton a {
+  text-decoration: none;
+}
+.current {
+  background-color: #EF8354;
+}
+
+.aboutHome {
+  grid-area: aboutHome;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.mapHome {
+  grid-area: mapHome;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.infoHome {
+  grid-area: infoHome;
+  background-color: rgb(79, 93, 117);
+}
+
+@media screen and (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: auto;
+    grid-template-areas: "homeTitle" "phoneNav" "homeButton" "brazilButton" "englandButton" "russiaButton" "usaButton" "conclusionButton" "aboutHome" "mapHome" "infoHome";
+  }
+
+  .phoneNav {
+    grid-area: phoneNav;
+    padding: 15px;
+  }
+
+  .button {
+    display: none;
+  }
+
+  #mapRight {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .phoneNav {
+    display: none;
+  }
+
+  #mapBelow {
+    display: none;
+  }
+}
+
+#expander {
+  display: none;
+}
+
+a {
+  color: #2d3142;
+}
