@@ -16,7 +16,7 @@ IUPUI -- Amy Martin
 
 GROUP 3:
 
-HHx -- Tiia Makinen
+HH -- Tiia Makinen
 HH -- Gleb Skachkov
 HH -- Evalyne Gichuki
 IUPUI -- Sudha Anand
