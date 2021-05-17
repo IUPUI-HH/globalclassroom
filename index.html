@@ -1,114 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8"> 
-<title>Responsive Navigation Demo</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3"/>
+		<meta name="author" content="UIPUI & Haaga-Helia"/>
+		<meta name="description" content="IUPUI and Haaga-Helia came together in the Spring 2021 semester to collaborate in a Global Classroom initiative. This Global Classroom included students from all over the world and resulted in a collaborative site from each of the five groups."/>
+		<meta name="keywords" content="GCI, Global Classroom initiative, design, collaboration, html, css, IUPUI, Haaga-Helia"/>
+		<title>GCI: IUPUI - HH Collaboration</title>
+		<link rel="stylesheet" href="mainStyles.css"/>
+	</head>
+	<body>
+		<div id="headWrapper">
+			<header>
+				<div id="logoWrapper">
+				</div>
+				<h1 class="nowrap">Global Classroom Initiative</h1>
+				<h2>IUPUI - HH Collaboration:<span class="nowrap">Spring 2021</span></h2>
+			</header>
+			<nav id="headerNav">
+				<ul>
+					<li><a href="#overview">Overview</a></li>
+					<li><a href="#group1">Group 1</a></li>
+					<li><a href="#group2">Group 2</a></li>
+					<li><a href="#group3">Group 3</a></li>
+					<li><a href="#group4">Group 4</a></li>
+					<li><a href="#group5">Group 5</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="splashImage">
+			<img src="images/splashimg.png"/>
+		</div>
+		<main>
+			<section id="overview">
+				<h2>Overview</h2>
+				<div class="content">
+					<div class="videoWrapper">
+				
+					</div>
+					<div class="textWrapper">
+						<h3>International Collaboration</h3>
+						<p>“Information Structures for the Web” (IUPUI) and “Orientation to Digital Services” (Haaga-Helia) came together in the Spring 2021 semester to collaborate in a <a href="https://global.iu.edu/education/internationalization/classroom/index.html">Global Classroom initiative</a>. This Global Classroom included students from Finland, Russia, Pakistan, Kenya, Nepal, South Africa, Germany, Chile, the United Kingdom, and the United States.</p>
+						
+						<p>Students in William Helling’s course (Information Structures for the Web) partnered with students in Kasper Valtakari's course (Orientation to Digital Services); 10 IUPUI students worked with 11 Haaga-Helia students. HH students were added to the IUPUI Canvas course as students via their IU guest accounts where they see lectures and submit assignment just like the IUPUI students.</p>
+						
+						<h3>Global Classroom Themes</h3>
+						
+						<p>Each group was asked to react to a basic theme for this Global Classroom initiative: in a collaborative session the students discussed what sorts of themes would be relevant and appropriate for a Global Classroom, eventually deciding on "culture, background, assimilation, and diversity;" features and commonalities that students share.</p>
+						
+						<h3>Web Design & Digital Services</h3>
+						
+						<p>All students covered principles, methods, and techniques to develop web sites and digital services. This course emphasizes the work needed to create valid, accessible, and usable information displays for a global audience. Such effort requires development in both technical as well as conceptual skills.</p>
+						
+						<p>Information delivery today is most often through a screen of some sort, whether it be a desktop monitor, a tablet, a smartphone, or other device. Students need to know how users receive that information and what must be done to accommodate them. Native-English speakers and those who work in English as their second language will combine their insights in international communication. Through collaboration in a multi-cultural environment, students become aware of their own cultural bias and tendencies.</p>
+						
+						
+						<h3>Timetable</h3>
 
-<style>
-header {grid-area: header; background-color: yellow;}
-nav {grid-area: nav; background-color: gray;}
-main {grid-area: main; background-color: orange;}
-aside {grid-area: aside; background-color: bisque;}
-footer {grid-area: footer; background-color: green;}
+						<p>The first 6-7 weeks were spent on introductions, getting familiar with class tools, and studying basics of HTML and CSS. After this orientation, the students were divided into five groups, with a mixed representation of IUPUI + HH students. The last half of the semester these teams collaborated on their own group website. Each group had complete freedom for how they wanted to create their website, as long as it adhered to the technical standards for HTML, CSS, and accessibility. The website was required to be responsive and thus suitable for any device.</p>
 
-.grid-container 
-{
-display: grid;
-grid-template-areas:
-    'header header header header header header'
-    'nav nav main main main aside'
-	'nav nav main main main aside'
-    'nav nav footer footer footer footer';
-grid-gap: .5em;
-padding: .5em;
-}
+						<p>Students used these main tools to collaborate: Slack, GitHub, LinkedIn. Some groups used additional tools such as Discord and WhatsApp.</p>
 
-
-ul li
-{
-list-style-type: none;
-}
-
-
-/*FIRST BREAK POINT */
-@media only screen and (max-width : 900px) {
-body {background: blue;}
-
-.grid-container 
-{
-display: grid;
-grid-template-areas:
-    'nav nav nav nav nav nav'
-    'header header header header header header'
-	'main main main main aside aside'
-    'footer footer footer footer footer footer';
-grid-gap: .5em;
-padding: .5em;
-}
-
-ul li
-{
-display: inline-block;
-}
-
-}
-
-/*SECOND BREAK POINT */
-@media only screen and (max-width : 600px) {
-
-body {background: fuchsia;}
-
-.grid-container 
-{
-display: grid;
-grid-template-areas:
-    'nav nav nav nav nav nav'
-    'header header header header header header'
-	'main main main main main main'
-	'aside aside aside aside aside aside'
-    'footer footer footer footer footer footer';
-grid-gap: .5em;
-padding: .5em;
-}
-
-ul li
-{
-display: inline-block;
-}
-
-}
-
-
-</style>
-</head>
-<body>
-
-
-<div class="grid-container">
-<header><h1>PLACEHOLDER FILE</h1></header>
-
-<nav>Menu Goes Here<br>
-<ul>
-<li>Home</li>
-<li>Catiline</li>
-<li>Deiotarus</li>
-<li>Murena</li>
-<li>Caelius</li>
-<li>Pompey</li>
-<li>House</li>
-<li>Provinces</li>
-<li>Philippic</li>
-</ul>
-</nav>
-
-<main><h2>Main Goes Here</h2>Cicero has been traditionally considered the master of Latin prose, with Quintilian declaring Cicero was "not the name of a man, but of eloquence itself." He is credited with transforming Latin from a modest utilitarian language into a versatile literary medium capable of expressing abstract and complicated thoughts with clarity.</main>  
-
-<aside><h2>Aside Goes Here</h2><br>Quintilian declaring Cicero was "not the name of a man, but of eloquence itself." He is credited with transforming Latin from a modest utilitarian language into a versatile literary medium capable of expressing abstract and complicated </aside>
-
-<footer><h2>Footer Goes Here</h2>During the chaotic latter half of the first century BC, marked by civil wars and the dictatorship of Gaius Julius Caesar, Cicero championed a return to the traditional republican government.</footer>
-
-</div>
-
-</body>
-</html>
+					</div>
+				</div>
+			</section>
+			<section id="group1" class="projectOverview">
+				<h2><a href="https://iupui-hh.github.io/globalclassroom/group1/" target="_blank" rel="noopener noreferrer">Culture Guide<span class="nowrap">(Group 1)<span/></a></h2>
+						<div class="content">
+							<div class="siteOverview">
+								<div class="sitePreview">
+								<a href="https://iupui-hh.github.io/globalclassroom/group1/" target="_blank" rel="noopener noreferrer">
+									<img class="desktopSitePreview" src="images/g1-desk.png" alt="Culture Guide Site Preview (desktop)"/>
+									<img class="mobileSitePreview" src="images/g1-mob.png" alt="Culture Guide Site Preview (mobile)"/>
+									</a>
+								</div>
+								<p><a href="https://iupui-hh.github.io/globalclassroom/group1/" target="_blank" rel="noopener noreferrer">“Culture Guide”</a> deals with the challenges that come from moving to a new, unfamiliar place. The goal is to help with the specifics of the “frustration/rejection” phase in which immigrants or visitors find themselves at odds with their new/temporary home.</p>
+							</div>
+							<div class="teamOverview">
+								<h3>Team Members</h3>
+								<div class="teamMember">
+									<div class="memberText">
+										<h4>Shannon Schrauwen</h4>
+										<p class="university">Haaga-Helia</p>
+									</div>
+								</div>
+								<div class="teamMember">
+									<div class="memberText">
+										<h4>Amaru Korpimäki</h4>
+										<p class="university">Haaga-Helia</p>
+									</div>
+								</div>
+								<div class="teamMember">
+									<div class="memberText">
+										<h4>Maeve Brewer</h4>
+										<p class="university">IUPUI</p>
+									</div>
+								</div>
+								<div class="teamMember">
+									<div class="memberText">
+										<h4>Joseph Eldridge</h4>
+										<p class="university">IUPUI</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="group2" class="projectOverview">
+						<h2><a href="https://iupui-hh.github.io/globalclassroom/group2/" target="_blank" rel="noopener noreferrer">Cross-Cultural Ties Through Social Media Platforms<span class="nowrap">(Group 2)</span></a></h2>
+						<div class="content">
+							<div class="siteOverview">
+								<div class="sitePreview">
+								<a href="https://iupui-hh.github.io/globalclassroom/group2/" target="_blank" rel="noopener noreferrer">
+									<img class="desktopSitePreview" src="images/g2-desk.png" alt="Culture Guide Site Preview (desktop)"/>
+									<img class="mobileSitePreview" src="images/g2-mob.png" alt="Culture Guide Site Preview (mobile)"/>
+									</a>
+								</div>
+								<p><a href="https://iupui-hh.github.io/globalclassroom/group2/" target="_blank" rel="noopener noreferrer">“Cross-Cultural Ties Through Social Media Platforms”</a> explores the globalization of technology and how connections can be easily created by networks of social media. The project focuses on five countries: Russia, the United Kingdom, the United States, Israel, and Brazil.</p>
+							</div>
+							<div class="teamOverview">
+								<h3>Team Members</h3>
+								<div class="teamMember">
+									<div class="memberText">
+										<h4>Gabriela Ticu</h4>
+										<p class="university">Haaga-Helia</p>
+									</div>
+								</div>
+								<div class="teamMember">
+									<div class="memberText">
+										<h4>Axel Wills</h4>
+										<p class="university">Haaga-Helia</p>
+									</div>
+								</div>
+								<div class="teamMember">
+									<div class="memberText">
+										<h4>Olivia MacIsaac</h4>
+										<p class="university">IUPUI</p>
+									</div>
+								</div>
+								<div class="teamMember">
+									<div class="memberText">
+										<h4>Amy Martin</h4>
+										<p class="university">IUPUI</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="group3" class="projectOverview">
+						<h2><a href="https://iupui-hh.github.io/globalclassroom/group3/" target="_blank" rel="noopener noreferrer">BEST-G<span class="nowrap">(Group 3)</span></a></h2>
+						<div class="content">
+							<div class="siteOverview">
+								<div class="sitePreview">
+								<a href="https://iupui-hh.github.io/globalclassroom/group3/" target="_blank" rel="noopener noreferrer">
+									<img class="desktopSitePreview" src="images/g3-desk.png" alt="Culture Guide Site Preview (desktop)"/>
+									<img class="mobileSitePreview" src="images/g3-mob.png" alt="Culture Guide Site Preview (mobile)"/>
+									</a>
+								</div>
+								<p><a href="https://iupui-hh.github.io/globalclassroom/group3/" target="_blank" rel="noopener noreferrer">“Best-G”</a> highlights the challenges, as well as assets, of the Global collaborative classroom initiative. Here is shared the members’ diverse backgrounds, thoughts, and skills as a whole thus shedding light on a trend of globalization of the classroom experience.</p>
+							</div>
+							<div class="teamOverview">
+								<h3>Team Members</h3>
+								<div class="teamMember">
+									<div class="memberText">
+										<h4>Tiia Makinen</h4>
+										<p class="university">Haaga-Helia</p>
+									</div>
+								</div>
+								<div class="teamMember">
+									<div class="memberText">
+										<h4>Gleb Skachkov</h4>
+										<p class="university">Haaga-Helia</p>
+									</div>
+								</div>
+								<div class="teamMember">
+									<div class="memberText">
+										<h4>Evalyne Gichuki</h4>
+										<p class="university">Haaga-Helia</p>
+									</div>
+								</div>
+								<div class="teamMember">
+									<div class="memberText">
+										<h4>Sudha Anand</h4>
+										<p class="university">IUPUI</p>
+									</div>
+								</div>
+								<div class="teamMember">
+									<div class="memberText">
+										<h4>Brittany Cain</h4>
+										<p class="university">IUPUI</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="group4" class="projectOverview">
+						<h2><a href="https://iupui-hh.github.io/globalclassroom/group4/" target="_blank" rel="noopener noreferrer">Lock Down<span class="nowrap">(Group 4)</span></a></h2>
+						<div class="content">
+							<div class="siteOverview">
+								<div class="sitePreview">
+									<a href="https://iupui-hh.github.io/globalclassroom/group4/" target="_blank" rel="noopener noreferrer">
+									<img class="desktopSitePreview" src="images/g4-desk.png" alt="Culture Guide Site Preview (desktop)"/>
+									<img class="mobileSitePreview" src="images/g4-mob.png" alt="Culture Guide Site Preview (mobile)"/>
+									</a>
+								</div>
+								<p><a href="https://iupui-hh.github.io/globalclassroom/group4/" target="_blank" rel="noopener noreferrer">“Lock Down”</a> provides reactions to how students in higher education have been impacted by the pandemic around the globe based on a brief survey of international articles.</p>
+							</div>
+							<div class="teamOverview">
+								<h3>Team Members</h3>
+								<div class="teamMember">
+									<div class="memberText">
+										<h4>Suraj Mishra</h4>
+										<p class="university">Haaga-Helia</p>
+									</div>
+								</div>
+								<div class="teamMember">
+									<div class="memberText">
+										<h4>Alpo Remes</h4>
+										<p class="university">Haaga-Helia</p>
+									</div>
+								</div>
+								<div class="teamMember">
+									<div class="memberText">
+										<h4>Jaquelyn Dieguez</h4>
+										<p class="university">IUPUI</p>
+									</div>
+								</div>
+								<div class="teamMember">
+									<div class="memberText">
+										<h4>Akesha Horton</h4>
+										<p class="university">IUPUI</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="group5" class="projectOverview">
+						<h2><a href="https://iupui-hh.github.io/globalclassroom/group5/" target="_blank" rel="noopener noreferrer">Intercultural Communication in a Global Classroom<span class="nowrap">(Group 5)</span></a></h2>
+						<div class="content">
+							<div class="siteOverview">
+								<div class="sitePreview">
+								<a href="https://iupui-hh.github.io/globalclassroom/group5/" target="_blank" rel="noopener noreferrer">
+									<img class="desktopSitePreview" src="images/g5-desk.png" alt="Culture Guide Site Preview (desktop)"/>
+									<img class="mobileSitePreview" src="images/g5-mob.png" alt="Culture Guide Site Preview (mobile)"/>
+									</a>
+								</div>
+								<p><a href="https://iupui-hh.github.io/globalclassroom/group5/" target="_blank" rel="noopener noreferrer">"Intercultural Communication in a Global Classroom"</a> studies intercultural communication with a concentration on communicating with people who are culturally different, balancing working and studying while collaborating in an online global classroom.</p>
+							</div>
+							<div class="teamOverview">
+								<h3>Team Members</h3>
+								<div class="teamMember">
+									<div class="memberText">
+										<h4>Mariia Sinodalova</h4>
+										<p class="university">Haaga-Helia</p>
+									</div>
+								</div>
+								<div class="teamMember">
+									<div class="memberText">
+										<h4>Ville Schenk</h4>
+										<p class="university">Haaga-Helia</p>
+									</div>
+								</div>
+								<div class="teamMember">
+									<div class="memberText">
+										<h4>Michelle Quirke</h4>
+										<p class="university">IUPUI</p>
+									</div>
+								</div>
+								<div class="teamMember">
+									<div class="memberText">
+										<h4>Kateryna Dieguez</h4>
+										<p class="university">IUPUI</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</main>
+				<footer>
+					<p>Contact Info:</p>
+					<ul>
+					<li><a href="https://soic.iupui.edu/people/william-helling/" target="_blank" rel="noopener noreferrer">William Helling</a></li>
+					<li><a href="https://www.haaga-helia.fi/fi/yhteystiedot/kasper-valtakari" target="_blank" rel="noopener noreferrer">Kasper Valtakari</a></li>
+					<li><a href="https://soic.iupui.edu/" target="_blank" rel="noopener noreferrer">IUPUI</a></li>
+					<li><a href="https://www.haaga-helia.fi/en/information-technology-and-digital-services" target="_blank" rel="noopener noreferrer">Haaga-Helia</a></li>
+					</ul>
+						</footer>
+					</body>
+				</html>
