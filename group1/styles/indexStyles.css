@@ -176,6 +176,7 @@ main {
     flex-direction: row;
   }
   .card-container__card__image {
+	display:none;
     border-radius: 20px;
     width: 30vw;
     margin: 5vw;
