@@ -215,6 +215,9 @@ main section p {
 .siteOverview {
 	flex:2;
 }
+.siteOverview p {
+	padding:1em;
+}
 
 .sitePreview {
 	max-width:100%;
@@ -246,7 +249,6 @@ main section p {
 .teamMember {
 	display:flex;
 	justify-content:flex-start;
-	align-content:flext-start;
 }
 .teamMember img {
 	width:100px;
@@ -266,8 +268,14 @@ main section p {
 	margin:1em;
 }
 footer {
-	padding:1em;
-	background-color: gainsboro;
+	padding:3em;
+	background-color: white;
+	border-top:1px solid gainsboro;
+}
+footer h2 {
+	font-weight:bold;
+	font-size:120%;
+	margin-bottom:.5em;
 }
 
 @media only screen and (max-width: 1000px){
@@ -307,6 +315,7 @@ footer {
 		justify-content:space-between;
 		flex-wrap:wrap;
 }
+
 @media only screen and (min-width: 1920px){
 	body {
 		background-color:pink;
