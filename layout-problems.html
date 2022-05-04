@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Navigation Demo</title>
+    <style>
+		
+		header {
+            grid-area: header;
+            background-color: yellow;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: gray;
+        }
+
+        main {
+            grid-area: main;
+            background-color: orange;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: bisque;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: lavender;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header aside'
+                'nav nav main main main aside'
+                'nav nav main main main aside'
+                'nav nav main main main aside'
+				'footer footer footer footer footer footer';
+			max-width: 62em; /* GIVE CONTAINER A WIDTH AND MARGINS IF YOU DO NOT WANT FULL SCREEN */
+			margin: auto;
+        }
+
+
+        .nobullets {
+            list-style-type: none;
+        }
+
+
+ /*FIRST BREAK POINT === tablet */
+        @media only screen and (max-width : 900px) {
+
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                    'header header header header header header'
+					'nav nav nav nav nav nav'
+                    'main main main main aside aside'
+                    'footer footer footer footer footer footer';
+            }
+
+            .nobullets li {
+                display: inline-block;
+            }
+
+        }
+
+ /*SECOND BREAK POINT === mobile */
+        @media only screen and (max-width : 600px) {
+
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                    'nav nav nav nav nav nav'
+                    'header header header header header header'
+                    'main main main main main main'
+                    'aside aside aside aside aside aside'
+                    'footer footer footer footer footer footer';
+            }
+		
+
+        }
+	
+	</style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <h1>Help Make This Web Page Much Better!</h1>
+        </header>
+
+        <nav><!-- these will be navbar links -->
+            <ul class="nobullets">
+                <li>Home</li>
+                <li>Catiline</li>
+                <li>Deiotarus</li>
+                <li>Murena</li>
+                <li>Caelius</li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>All You Want to Know about Cicero</h2>
+			<img src="cicero.jpg" alt="Marcus Tullius Cicero">Cicero has been traditionally considered the master of Latin prose, with Quintilian
+            declaring Cicero was "not the name of a man, but of eloquence itself." He is credited with transforming Latin from a modest utilitarian language into a versatile literary medium capable of expressing abstract and complicated thoughts with clarity. He is credited with transforming Latin from a modest utilitarian language into a versatile literary medium capable of expressing abstract and complicated -- but of eloquence itself." He is credited with transforming Latin from a modest utilitarian language into a versatile literary medium capable of expressing abstract complicated thoughts with clarity. Cicero has been traditionally considered the master of Latin prose, with Quintilian declaring Cicero was "not the name of a man, but of eloquence itself." He is credited with transforming Latin from a modest utilitarian language into a versatile literary medium capable of expressing abstract and complicated thoughts with clarity. He is credited with transforming Latin from a modest utilitarian language into a versatile literary medium capable of expressing abstract and complicated.
+        </main>
+
+        <aside>
+            <h2>Cicero's Life</h2>
+			<img src="CiceroBust.jpg" alt="Bust of Marcus Tullius Cicero">Quintilian declaring Cicero was "not the name of a man, but of eloquence itself." He is credited with transforming Latin from a modest utilitarian language into a versatile literary medium capable of expressing abstract and complicated -- but of eloquence itself." He is credited with transforming
+            Latin from a modest utilitarian language into a versatile literary medium capable of expressing abstract and complicated thoughts with clarity.
+        </aside>
+
+        <footer>
+           <!-- these will be footer links to social media sites-->
+		   Facebook | Instagram | Twitter 
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
